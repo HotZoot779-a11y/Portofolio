@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IkhwanulKahfi-Protofolio</title>
+    <meta name="description" content="Professional portfolio for cybersecurity specialist, programmer, and web designer. Expert services in securing your digital assets.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark">
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-menu" id="navMenu">
+                <button class="nav-link" onclick="scrollToSection('about')">Tentang</button>
+                <button class="nav-link" onclick="scrollToSection('services')">Layanan</button>
+                <button class="nav-link" onclick="scrollToSection('portfolio')">Portofolio</button>
+                <button class="nav-link" onclick="scrollToSection('skills')">Keahlian</button>
+                <button class="nav-link" onclick="scrollToSection('certifications')">Sertifikasi</button>
+                <button class="nav-link" onclick="scrollToSection('contact')">Kontak</button>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="about" class="section hero-section">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <h1 class="hero-title">
+                                Solusi Teknologi <span class="gradient-text">Profesional</span>
+                            </h1>
+                            <p class="hero-description">
+                                Keamanan cyber, programming, dan web design. Kami mengubah visi digital Anda menjadi kenyataan dengan solusi yang inovatif dan terpercaya.
+                            </p>
+                        </div>
+
+                        <div class="hero-skills">
+                            <p class="section-label">Keahlian Kami</p>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <i class="fas fa-shield-alt skill-icon"></i>
+                                    <div>
+                                        <h3>Cybersecurity</h3>
+                                        <p>Penetration testing & keamanan jaringan</p>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fas fa-code skill-icon"></i>
+                                    <div>
+                                        <h3>Programming</h3>
+                                        <p>Full-stack web & Game development</p>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fas fa-palette skill-icon"></i>
+                                    <div>
+                                        <h3>Web Design</h3>
+                                        <p>UI/UX modern & responsif</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hero-actions">
+                            <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                                Mulai Proyek
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <button class="btn btn-outline" onclick="scrollToSection('portfolio')">
+                                Lihat Portofolio
+                            </button>
+                        </div>
+
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <!-- ISI NANTI KALO UDAH ADA PROYEK -->
+                            </div>
+                            <div class="stat-item">
+                            <!-- ISI NANTI KALO UDAH PUNYA PENGALAMAN -->
+                            </div>
+                            <div class="stat-item">
+                              <!-- ISI NANTI KALO UDAH ADA KLIENT -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual">
+                        <div class="code-visual">
+                            <div class="code-bg-1"></div>
+                            <div class="code-bg-2"></div>
+                            <div class="code-content">
+                                <div class="code-line">
+                                    <span class="code-tag">&lt;</span>
+                                    <span class="code-keyword">Security</span>
+                                    <span class="code-tag">/&gt;</span>
+                                </div>
+                                <div class="code-line indent">
+                                    <span class="code-keyword">const</span>
+                                    <span class="code-text"> excellence =</span>
+                                    <span class="code-string"> "True"</span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="code-tag">&lt;</span>
+                                    <span class="code-keyword">Innovation</span>
+                                    <span class="code-tag">&gt;</span>
+                                </div>
+                                <div class="code-line indent">
+                                    <span class="code-comment">// Solusi terbaik untuk kebutuhan Anda</span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="code-tag">&lt;/</span>
+                                    <span class="code-keyword">Innovation</span>
+                                    <span class="code-tag">&gt;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section services-section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-label">Layanan Kami</p>
+                    <h2 class="section-title">Solusi Lengkap untuk Kebutuhan Digital Anda</h2>
+                    <p class="section-description">
+                        Kami menyediakan layanan komprehensif dari keamanan cyber hingga pengembangan aplikasi modern.
+                    </p>
+                </div>
+
+                <div class="services-grid" id="servicesGrid">
+                    <!-- Services will be loaded from JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section portfolio-section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-label">Portofolio</p>
+                    <h2 class="section-title">Proyek-Proyek Terbaru Kami</h2>
+                    <p class="section-description">
+                        Portofolio beragam menunjukkan keahlian kami dalam mengerjakan proyek dari berbagai industri dan skala.
+                    </p>
+                </div>
+
+                <div class="portfolio-grid" id="portfolioGrid">
+                    <!-- Portfolio items will be loaded from JavaScript -->
+                </div>
+
+                <div class="text-center mt-12">
+                    <button class="btn btn-outline">Lihat Semua Proyek →</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-label">Keahlian</p>
+                    <h2 class="section-title">Teknologi & Tools yang Saya Kuasai</h2>
+                    <p class="section-description">
+                        Pengalaman mendalam dengan teknologi terkini dalam keamanan siber, pengembangan, dan desain.
+                    </p>
+                </div>
+
+                <div class="skills-categories-grid" id="skillsGrid">
+                    <!-- Skills will be loaded from JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section certifications-section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-label">Sertifikasi & Awards</p>
+                    <h2 class="section-title">Pengakuan & Prestasi</h2>
+                    <p class="section-description">
+                        Sertifikasi profesional dan penghargaan yang telah diraih sebagai bukti komitmen terhadap keunggulan.
+                    </p>
+                </div>
+
+                <div id="certificationsContent">
+                    <!-- Certifications will be loaded from JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-label">Hubungi Kami</p>
+                    <h2 class="section-title">Siap Membantu Proyek Anda</h2>
+                    <p class="section-description">
+                        Ada pertanyaan atau siap untuk memulai proyek? Hubungi kami dan mari diskusikan solusi terbaik untuk Anda.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <a href="mailto:hello@techpro.id" class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <div>
+                                <p class="contact-label">Email</p>
+                                <p class="contact-value">kahfiihwan9@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="tel:+628123456789" class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <div>
+                                <p class="contact-label">Telepon</p>
+                                <p class="contact-value">+62 895-3348-7156</p>
+                            </div>
+                        </a>
+                        <a href="#" class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <div>
+                                <p class="contact-label">Lokasi</p>
+                                <p class="contact-value">Jakarta, Indonesia</p>
+                            </div>
+                        </a>
+
+
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" id="contactForm">
+                            <div id="formMessage" class="form-message" style="display: none;"></div>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label>Nama</label>
+                                    <input type="text" name="name" required placeholder="Nama Anda">
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" name="email" required placeholder="email@example.com">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Subjek</label>
+                                <input type="text" name="subject" required placeholder="Subjek pesan Anda">
+                            </div>
+                            <div class="form-group">
+                                <label>Pesan</label>
+                                <textarea name="message" rows="5" required placeholder="Tulis pesan Anda di sini..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">
+                                Kirim Pesan
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
